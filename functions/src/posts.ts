@@ -1,6 +1,6 @@
-import { firebaseFunctions } from './imports/functions'
 import { PostLoader } from './classes/post-loader'
 import { UserLoader } from './classes/user-loader'
+import { firebaseFunctions } from './imports/functions'
 
 exports.getUserPosts = firebaseFunctions.https.onCall(async (data, context) => {
 
@@ -10,7 +10,4 @@ exports.getUserPosts = firebaseFunctions.https.onCall(async (data, context) => {
     const postLoader = new PostLoader()
 
     const user = await userLoader.getUser(userID)
-    const posts = await postLoader.getPosts(userID)
-
-    return posts
 })
