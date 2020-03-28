@@ -1,5 +1,5 @@
-import { firebaseFunctions } from './imports/functions'
 import { PostLoader } from './classes/post-loader'
+import { firebaseFunctions } from './imports/functions'
 
 exports.getUserPosts = firebaseFunctions.https.onCall(async (data, context) => {
 
