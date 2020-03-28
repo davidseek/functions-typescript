@@ -7,6 +7,7 @@ export class PostLoader {
             /**
              * Load posts from database here.
              */
+            resolve()
         })
     }
 }

@@ -7,6 +7,7 @@ export class UserLoader {
             /**
              * Load user from database here.
              */
+            resolve()
         })
     }
 }
