@@ -14,4 +14,7 @@ export async function getUserPostsPrivate(userID: string) {
     const postLoader = new PostLoader()
 
     const user = await userLoader.getUser(userID)
+    const posts = await postLoader.getPosts(userID)
+
+    return posts
 }
