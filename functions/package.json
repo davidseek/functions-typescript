@@ -2,7 +2,6 @@
   "name": "typescript-functions",
   "description": "TypeScript sample Cloud Functions for Firebase",
   "dependencies": {
-    "chai": "^4.2.0",
     "firebase-admin": "~8.9.2",
     "firebase-functions": "^3.3.0"
   },
